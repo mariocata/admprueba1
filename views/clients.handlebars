@@ -1,0 +1,53 @@
+<section  class="container">
+    <h1>Clients</h1>
+  
+       <div class="row mt-5">
+    <div class="col-md-7">
+        <table class="table table-dark">
+            
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Nacionalidad</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+             {{#each clients}}
+                        <tr>
+                            <td>
+                                {{idclient}}
+                            </td>
+                            <td> {{Nombre}}</td>
+                            <td> {{Correo}}</td>
+                            <td>{{Telefono}}</td>
+                            <td>
+                               {{Nacionalidad}}
+                            </td>
+                             <td>
+                                <a href="" class="btn btn-danger">Delete</a>
+                                <a href="" class="btn btn-info">Update</a>
+                            </td>
+                        </tr>
+                
+            </tbody>
+            {{else}}
+        <p>No clients yet</p>
+    {{/each}}
+        </table>
+
+    </div>
+   
+</div>
+
+
+
+      
+ 
+   
+
+    
+  </section>
